@@ -1,4 +1,7 @@
 set nobackup
 set nowritebackup
 set noswapfile
-set noundofile
+
+if v:version > 700
+  set noundofile
+endif
